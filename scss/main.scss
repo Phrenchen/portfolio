@@ -23,8 +23,9 @@ h3 {
   font-weight: 400;
 
   &.lg-heading {
-    font-size: 6rem;
+    font-size: 6vmin;    
   }
+  //font-size: 6rem;
 
   &.sm-heading {
     margin-bottom: 2rem;
@@ -91,8 +92,10 @@ main {
 
   .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 3vmin;
+    background: rgba($primary-color, .5);  
   }
+  //font-size: 1.5rem;
 
   .job-1 {
     grid-area: job1;
@@ -107,7 +110,7 @@ main {
   }
 
   .job {
-    background: lighten($primary-color, 5);
+    background: lighten(rgba($primary-color, .5), 5);  
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
@@ -128,7 +131,8 @@ main {
       border-color: $secondary-color;
       @include easeOut;
     }
-  }
+  }  
+
 }
 
 // Contact Page
@@ -139,12 +143,14 @@ main {
   align-items: center;
   margin-top: 1rem;
 
+  //font-size: 2rem;
   div {
-    font-size: 2rem;
+    font-size: 3vmin; 
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
+    background: rgba($primary-color, .5); 
 
     &:hover {
       padding: 0.5rem 1.5rem;
@@ -164,8 +170,9 @@ main {
   border: 0;
   margin-bottom: 0.3rem;
   &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
+    background: rgba($secondary-color, .5);
+    color: set-text-color($secondary-color); 
+    @include easeOut;   
   }
 }
 
@@ -177,14 +184,14 @@ main {
 
 .btn-light {
   @extend .btn;
-  background: lighten($primary-color, 50);
+  background: lighten(rgba($primary-color, .5), 5);  
   color: #333;
 }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 10);
+  background: darken($primary-color, 5); 
   color: set-text-color($primary-color);
   height: 60px;
 }

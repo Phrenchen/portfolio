@@ -21,18 +21,20 @@
 
     .btn-line {
       // Line 1 - Rotate
+      // rotate 45deg
       &:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(405deg) translate(5px, 5px); 
       }
-
+      
       // Line 2 - Hide
       &:nth-child(2) {
         opacity: 0;
       }
-
+      
       // Line 3 - Rotate
+      // rotate -45deg
       &:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
+        transform: rotate(-405deg) translate(7px, -6px);  
       }
     }
   }
@@ -113,7 +115,7 @@
   .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 3vmin;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
