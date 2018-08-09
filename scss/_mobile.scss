@@ -17,7 +17,7 @@
   main {
     
     .lg-heading {
-      font-size: 6vmin;     
+      //font-size: 6vmin;      
       line-height: 1;
       margin-bottom: 1rem;
     }
@@ -37,9 +37,8 @@
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
-    font-size: 5.5vmin;
+    //font-size: 5.5vmin;
   }
-  //font-size: 24px;
 
   .menu-branding {
     height: 25vh;
@@ -77,9 +76,9 @@
     }
 
     .lg-heading {
-      font-size: 6vmin;    
+      //font-size: 4vmin;    
       margin-top:1rem;
-      font-size: 5rem;
+      //font-size: 3rem; 
     }
   }
 

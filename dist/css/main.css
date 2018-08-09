@@ -4,13 +4,13 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  transition: all 0.35s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #000;
-    transition: all 0.5s ease-out; }
+    transition: all 0.35s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -43,13 +43,13 @@
     background: #acacac;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.35s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #b9b9b9;
     transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.35s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -60,7 +60,7 @@
       border: solid 3px #265300; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.35s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
@@ -68,13 +68,13 @@
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 3vmin;
+    font-size: 5vmin;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
     color: #000;
     text-decoration: none;
-    transition: all 0.5s ease-out; }
+    transition: all 0.35s ease-out; }
     .menu .nav-link:hover {
       color: #265300; }
 
@@ -128,7 +128,8 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(190, 190, 190, 0.5); }
+    background: rgba(190, 190, 190, 0.5);
+    font-size: 4vmin; }
 
 a {
   color: #fff;
@@ -146,12 +147,14 @@ main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
   main .icons {
-    margin-top: 1rem; }
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 3vmin; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #265300;
-        transition: all 0.5s ease-out; }
+        transition: all 0.35s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -169,8 +172,11 @@ main {
     border: #265300 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 3vmin;
-    background: rgba(185, 185, 185, 0.5); }
+    font-size: 3.5vmin;
+    background: rgba(185, 185, 185, 0.5);
+    padding: 1rem; }
+    .about-info .bio .techstack {
+      font-weight: 500; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -192,7 +198,7 @@ main {
     .projects img:hover {
       opacity: 0.5;
       border-color: #265300;
-      transition: all 0.5s ease-out; }
+      transition: all 0.35s ease-out; }
 
 .boxes {
   display: flex;
@@ -201,11 +207,11 @@ main {
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
-    font-size: 3vmin;
+    font-size: 3.5vmin;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    transition: all 0.5s ease-out;
+    transition: all 0.35s ease-out;
     background: rgba(185, 185, 185, 0.5); }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
@@ -222,7 +228,7 @@ main {
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: rgba(38, 83, 0, 0.5);
     color: #fff;
-    transition: all 0.5s ease-out; }
+    transition: all 0.35s ease-out; }
 
 .btn-dark {
   background: #3a3a3a;
@@ -249,7 +255,6 @@ main {
 
 @media screen and (max-width: 768px) {
   main .lg-heading {
-    font-size: 6vmin;
     line-height: 1;
     margin-bottom: 1rem; }
   ul.menu-nav,
@@ -262,8 +267,7 @@ main {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
     height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 5.5vmin; }
+    transform: translate3d(-100%, 0, 0); }
   .menu-branding {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
@@ -283,8 +287,6 @@ main {
     main #home h1 {
       margin-top: 10vh; }
     main .lg-heading {
-      font-size: 6vmin;
-      margin-top: 1rem;
-      font-size: 5rem; }
+      margin-top: 1rem; }
   .projects {
     grid-template-columns: 1fr; } }
