@@ -2,7 +2,17 @@ $primary-color: #b9b9b9;
 $secondary-color: #265300; 
 $show-home-image: true;
 $home-image: url(../img/background.jpg); 
-$background-opacity: 0;  
+$background-opacity: 0;
+
+$fontSizeLarge: 6vmin;
+$fontSizeMedium: 4vmin;
+$fontSizeSmall: 3vmin;
+
+$fontWeightFat: 600; 
+$fontWeightMedium: 400;
+$fontWeightSlim: 300;
+
+
 
 @mixin easeOut {
   transition: all 0.35s ease-out;   
