@@ -127,14 +127,17 @@ main {
 
   .job-3 {
     grid-area: job3;
-  }
+  }  
 
   .job {
     background: lighten(rgba($primary-color, .5), 5);  
     padding: 0.5rem;
     //border-bottom: $secondary-color 5px solid;
-    font-size: $fontSizeSmall; 
-  }
+    font-size: $fontSizeMedium;  
+    h3{
+      color: $secondary-color;  
+    }
+  } 
 }
 
 // Work/Projects

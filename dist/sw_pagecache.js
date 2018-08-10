@@ -1,8 +1,8 @@
-const CACHE_NAME = "v1";
+const CACHE_NAME = "v2";
 
 //---------------------------
 self.addEventListener('activate', function(event) {
-    var cacheWhitelist = ['v1'];
+    var cacheWhitelist = [CACHE_NAME];
   
     event.waitUntil(
       caches.keys().then(function(cacheNames) {
@@ -11,7 +11,7 @@ self.addEventListener('activate', function(event) {
             if (cacheWhitelist.indexOf(cacheName) === -1) {
               return caches.delete(cacheName);
             }
-          })
+          }) 
         );
       })
     );

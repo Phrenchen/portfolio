@@ -196,7 +196,9 @@ main {
   .about-info .job {
     background: rgba(198, 198, 198, 0.5);
     padding: 0.5rem;
-    font-size: 2vmin; }
+    font-size: 3vmin; }
+    .about-info .job h3 {
+      color: #265300; }
 
 .projects {
   display: grid;
