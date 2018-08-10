@@ -12,7 +12,7 @@
     height: 3px;
     margin: 0 0 5px 0;
     background: set-text-color($primary-color);
-    @include easeOut;
+    @include easeOut; 
   }
 
   // Rotate Into X With Menu Lines
@@ -116,7 +116,7 @@
   .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 5vmin;  
+    font-size: $fontSizeMedium;  
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: $fontWeightMedium;
